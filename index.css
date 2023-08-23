@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(18, 18, 66);
+  color: coral;
+  padding: 25px;
+  font-size: 25px;
+}
+
+.gtb {
+  background: #333 url("./image/GTBank.jpg") no-repeat center center/cover;
+  height: 100vh;
+  font-size: 30px;
+}
+
+.gtb .gtb-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  height: 100%;
+  padding: 0 2rem;
+
+  /* over lay */
+  top: 0;
+  left: 0;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgb(0, 0, 0, 0.79);
+}
+
+.gtb-content button {
+  padding: 14px;
+  width: 200px;
+  font-size: 40px;
+  font-weight: 300;
+  background-color: coral;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gtb-content button:hover {
+  background-color: rgb(224, 108, 66);
+  color: rgb(18, 18, 66);
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+}
